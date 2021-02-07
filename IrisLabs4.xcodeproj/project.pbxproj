@@ -1,0 +1,930 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		220DB55C8BC8A9881A340D91 /* Pods_IrisLabs4_IrisLabs4UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35A27A5F79F3C27A7EC77E8D /* Pods_IrisLabs4_IrisLabs4UITests.framework */; };
+		35A4490F1B96D493028ECE23 /* Pods_IrisLabs4Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCB48FEF4F0B3E2BD9FD228E /* Pods_IrisLabs4Tests.framework */; };
+		72D6703289EFF96F61C35EF6 /* Pods_IrisLabs4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C24DA3AEC5503600E767E05 /* Pods_IrisLabs4.framework */; };
+		B1505FEF254A733E00A72079 /* NetworkSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1505FEC254A733E00A72079 /* NetworkSession.swift */; };
+		B1505FF0254A733E00A72079 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1505FED254A733E00A72079 /* Reachability.swift */; };
+		B1505FF1254A733E00A72079 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1505FEE254A733E00A72079 /* ErrorView.swift */; };
+		B1505FF6254A790800A72079 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B1505FF5254A790800A72079 /* GoogleService-Info.plist */; };
+		B150602D254A85E300A72079 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B150602C254A85E300A72079 /* PostViewController.swift */; };
+		B1506035254A893000A72079 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1506034254A893000A72079 /* FeedTableViewCell.swift */; };
+		B1506043254ADA1700A72079 /* PostClassesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1506042254ADA1700A72079 /* PostClassesCollectionViewCell.swift */; };
+		B19D6BFF254A20BA00F1B448 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19D6BFE254A20BA00F1B448 /* AppDelegate.swift */; };
+		B19D6C03254A20BA00F1B448 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19D6C02254A20BA00F1B448 /* FeedViewController.swift */; };
+		B19D6C06254A20BA00F1B448 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B19D6C04254A20BA00F1B448 /* Main.storyboard */; };
+		B19D6C08254A20BD00F1B448 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B19D6C07254A20BD00F1B448 /* Assets.xcassets */; };
+		B19D6C0B254A20BD00F1B448 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B19D6C09254A20BD00F1B448 /* LaunchScreen.storyboard */; };
+		B19D6C16254A20BD00F1B448 /* IrisLabs4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19D6C15254A20BD00F1B448 /* IrisLabs4Tests.swift */; };
+		B19D6C21254A20BD00F1B448 /* IrisLabs4UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19D6C20254A20BD00F1B448 /* IrisLabs4UITests.swift */; };
+		B19D6C88254A2AC800F1B448 /* FirstScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19D6C85254A2AC700F1B448 /* FirstScreenViewController.swift */; };
+		B19D6C89254A2AC800F1B448 /* ConfirmNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19D6C86254A2AC700F1B448 /* ConfirmNumberViewController.swift */; };
+		B19D6C8A254A2AC800F1B448 /* EnterNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19D6C87254A2AC700F1B448 /* EnterNumberViewController.swift */; };
+		B19D6C91254A2B7500F1B448 /* ClassesMultiSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19D6C8F254A2B7400F1B448 /* ClassesMultiSelectViewController.swift */; };
+		B19D6C92254A2B7500F1B448 /* ClassesMultiSelectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19D6C90254A2B7500F1B448 /* ClassesMultiSelectTableViewCell.swift */; };
+		B19D6CCE254A5A5100F1B448 /* Extensions_DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19D6CC6254A5A5000F1B448 /* Extensions_DeviceInfo.swift */; };
+		B19D6CCF254A5A5100F1B448 /* Extensions_System.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19D6CC7254A5A5000F1B448 /* Extensions_System.swift */; };
+		B19D6CD0254A5A5100F1B448 /* Extensions_Segue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19D6CC8254A5A5100F1B448 /* Extensions_Segue.swift */; };
+		B19D6CD2254A5A5100F1B448 /* Extensions_UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19D6CCA254A5A5100F1B448 /* Extensions_UI.swift */; };
+		B19D6CD3254A5A5100F1B448 /* Extensions_Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19D6CCB254A5A5100F1B448 /* Extensions_Firebase.swift */; };
+		B19D6CD5254A5A5100F1B448 /* Extensions_Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19D6CCD254A5A5100F1B448 /* Extensions_Theme.swift */; };
+		B19D6CE8254A5B8200F1B448 /* ServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19D6CE7254A5B8200F1B448 /* ServiceViewController.swift */; };
+		B19D6CED254A5BB400F1B448 /* Extensions_Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19D6CEC254A5BB400F1B448 /* Extensions_Animations.swift */; };
+		B19D6CF9254A5BC200F1B448 /* TableLoadingHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19D6CF5254A5BC100F1B448 /* TableLoadingHUD.swift */; };
+		B19D6CFA254A5BC200F1B448 /* SentenceLoadingHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19D6CF6254A5BC100F1B448 /* SentenceLoadingHUD.swift */; };
+		B19D6CFB254A5BC200F1B448 /* loading_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = B19D6CF7254A5BC100F1B448 /* loading_animation.json */; };
+		B19D6CFC254A5BC200F1B448 /* LoadingHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19D6CF8254A5BC100F1B448 /* LoadingHUD.swift */; };
+		B1BA52FA254CE320007C9F9D /* Main8.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1BA52F4254CE320007C9F9D /* Main8.storyboard */; };
+		B1BA52FB254CE320007C9F9D /* MainXS.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1BA52F6254CE320007C9F9D /* MainXS.storyboard */; };
+		B1BA5305254FDE13007C9F9D /* MainPlus.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1BA5303254FDE13007C9F9D /* MainPlus.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B19D6C12254A20BD00F1B448 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B19D6BF3254A20BA00F1B448 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B19D6BFA254A20BA00F1B448;
+			remoteInfo = IrisLabs4;
+		};
+		B19D6C1D254A20BD00F1B448 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B19D6BF3254A20BA00F1B448 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B19D6BFA254A20BA00F1B448;
+			remoteInfo = IrisLabs4;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0167C57C427B5DDECC5B6458 /* Pods-IrisLabs4-IrisLabs4UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IrisLabs4-IrisLabs4UITests.release.xcconfig"; path = "Target Support Files/Pods-IrisLabs4-IrisLabs4UITests/Pods-IrisLabs4-IrisLabs4UITests.release.xcconfig"; sourceTree = "<group>"; };
+		07E03B5F40167EFF1D1BD4DE /* Pods-IrisLabs4-IrisLabs4UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IrisLabs4-IrisLabs4UITests.debug.xcconfig"; path = "Target Support Files/Pods-IrisLabs4-IrisLabs4UITests/Pods-IrisLabs4-IrisLabs4UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		0C24DA3AEC5503600E767E05 /* Pods_IrisLabs4.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IrisLabs4.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CD8A05ED82D1EBFD4D31521 /* Pods-IrisLabs4.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IrisLabs4.release.xcconfig"; path = "Target Support Files/Pods-IrisLabs4/Pods-IrisLabs4.release.xcconfig"; sourceTree = "<group>"; };
+		35A27A5F79F3C27A7EC77E8D /* Pods_IrisLabs4_IrisLabs4UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IrisLabs4_IrisLabs4UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		804D7ACCD75191B7DA593608 /* Pods-IrisLabs4Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IrisLabs4Tests.debug.xcconfig"; path = "Target Support Files/Pods-IrisLabs4Tests/Pods-IrisLabs4Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		B1505FEC254A733E00A72079 /* NetworkSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkSession.swift; sourceTree = "<group>"; };
+		B1505FED254A733E00A72079 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		B1505FEE254A733E00A72079 /* ErrorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		B1505FF5254A790800A72079 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B150602C254A85E300A72079 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		B1506034254A893000A72079 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		B1506042254ADA1700A72079 /* PostClassesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostClassesCollectionViewCell.swift; sourceTree = "<group>"; };
+		B19D6BFB254A20BA00F1B448 /* IrisLabs4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IrisLabs4.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B19D6BFE254A20BA00F1B448 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B19D6C02254A20BA00F1B448 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		B19D6C05254A20BA00F1B448 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B19D6C07254A20BD00F1B448 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B19D6C0A254A20BD00F1B448 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B19D6C0C254A20BD00F1B448 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B19D6C11254A20BD00F1B448 /* IrisLabs4Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IrisLabs4Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B19D6C15254A20BD00F1B448 /* IrisLabs4Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IrisLabs4Tests.swift; sourceTree = "<group>"; };
+		B19D6C17254A20BD00F1B448 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B19D6C1C254A20BD00F1B448 /* IrisLabs4UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IrisLabs4UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B19D6C20254A20BD00F1B448 /* IrisLabs4UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IrisLabs4UITests.swift; sourceTree = "<group>"; };
+		B19D6C22254A20BD00F1B448 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B19D6C36254A222000F1B448 /* IrisLabs4.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IrisLabs4.entitlements; sourceTree = "<group>"; };
+		B19D6C85254A2AC700F1B448 /* FirstScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstScreenViewController.swift; sourceTree = "<group>"; };
+		B19D6C86254A2AC700F1B448 /* ConfirmNumberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmNumberViewController.swift; sourceTree = "<group>"; };
+		B19D6C87254A2AC700F1B448 /* EnterNumberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterNumberViewController.swift; sourceTree = "<group>"; };
+		B19D6C8F254A2B7400F1B448 /* ClassesMultiSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassesMultiSelectViewController.swift; sourceTree = "<group>"; };
+		B19D6C90254A2B7500F1B448 /* ClassesMultiSelectTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassesMultiSelectTableViewCell.swift; sourceTree = "<group>"; };
+		B19D6CC6254A5A5000F1B448 /* Extensions_DeviceInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions_DeviceInfo.swift; sourceTree = "<group>"; };
+		B19D6CC7254A5A5000F1B448 /* Extensions_System.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions_System.swift; sourceTree = "<group>"; };
+		B19D6CC8254A5A5100F1B448 /* Extensions_Segue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions_Segue.swift; sourceTree = "<group>"; };
+		B19D6CCA254A5A5100F1B448 /* Extensions_UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions_UI.swift; sourceTree = "<group>"; };
+		B19D6CCB254A5A5100F1B448 /* Extensions_Firebase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions_Firebase.swift; sourceTree = "<group>"; };
+		B19D6CCD254A5A5100F1B448 /* Extensions_Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions_Theme.swift; sourceTree = "<group>"; };
+		B19D6CE7254A5B8200F1B448 /* ServiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceViewController.swift; sourceTree = "<group>"; };
+		B19D6CEC254A5BB400F1B448 /* Extensions_Animations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions_Animations.swift; sourceTree = "<group>"; };
+		B19D6CF5254A5BC100F1B448 /* TableLoadingHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableLoadingHUD.swift; sourceTree = "<group>"; };
+		B19D6CF6254A5BC100F1B448 /* SentenceLoadingHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SentenceLoadingHUD.swift; sourceTree = "<group>"; };
+		B19D6CF7254A5BC100F1B448 /* loading_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading_animation.json; sourceTree = "<group>"; };
+		B19D6CF8254A5BC100F1B448 /* LoadingHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingHUD.swift; sourceTree = "<group>"; };
+		B1BA52F5254CE320007C9F9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main8.storyboard; sourceTree = "<group>"; };
+		B1BA52F7254CE320007C9F9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainXS.storyboard; sourceTree = "<group>"; };
+		B1BA5304254FDE13007C9F9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainPlus.storyboard; sourceTree = "<group>"; };
+		DCB48FEF4F0B3E2BD9FD228E /* Pods_IrisLabs4Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IrisLabs4Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1A7CF82B0D8520C3C65BA12 /* Pods-IrisLabs4.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IrisLabs4.debug.xcconfig"; path = "Target Support Files/Pods-IrisLabs4/Pods-IrisLabs4.debug.xcconfig"; sourceTree = "<group>"; };
+		FB7081C338050455BBA461A2 /* Pods-IrisLabs4Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IrisLabs4Tests.release.xcconfig"; path = "Target Support Files/Pods-IrisLabs4Tests/Pods-IrisLabs4Tests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B19D6BF8254A20BA00F1B448 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72D6703289EFF96F61C35EF6 /* Pods_IrisLabs4.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B19D6C0E254A20BD00F1B448 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35A4490F1B96D493028ECE23 /* Pods_IrisLabs4Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B19D6C19254A20BD00F1B448 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				220DB55C8BC8A9881A340D91 /* Pods_IrisLabs4_IrisLabs4UITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0EB81390D0E37643990D1424 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C24DA3AEC5503600E767E05 /* Pods_IrisLabs4.framework */,
+				35A27A5F79F3C27A7EC77E8D /* Pods_IrisLabs4_IrisLabs4UITests.framework */,
+				DCB48FEF4F0B3E2BD9FD228E /* Pods_IrisLabs4Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2965E8F3371253BD3CB5FDF5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E1A7CF82B0D8520C3C65BA12 /* Pods-IrisLabs4.debug.xcconfig */,
+				1CD8A05ED82D1EBFD4D31521 /* Pods-IrisLabs4.release.xcconfig */,
+				07E03B5F40167EFF1D1BD4DE /* Pods-IrisLabs4-IrisLabs4UITests.debug.xcconfig */,
+				0167C57C427B5DDECC5B6458 /* Pods-IrisLabs4-IrisLabs4UITests.release.xcconfig */,
+				804D7ACCD75191B7DA593608 /* Pods-IrisLabs4Tests.debug.xcconfig */,
+				FB7081C338050455BBA461A2 /* Pods-IrisLabs4Tests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B1505FEB254A733E00A72079 /* Error States */ = {
+			isa = PBXGroup;
+			children = (
+				B1505FEC254A733E00A72079 /* NetworkSession.swift */,
+				B1505FED254A733E00A72079 /* Reachability.swift */,
+				B1505FEE254A733E00A72079 /* ErrorView.swift */,
+			);
+			path = "Error States";
+			sourceTree = "<group>";
+		};
+		B19D6BF2254A20BA00F1B448 = {
+			isa = PBXGroup;
+			children = (
+				B19D6BFD254A20BA00F1B448 /* IrisLabs4 */,
+				B19D6C14254A20BD00F1B448 /* IrisLabs4Tests */,
+				B19D6C1F254A20BD00F1B448 /* IrisLabs4UITests */,
+				B19D6BFC254A20BA00F1B448 /* Products */,
+				2965E8F3371253BD3CB5FDF5 /* Pods */,
+				0EB81390D0E37643990D1424 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B19D6BFC254A20BA00F1B448 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B19D6BFB254A20BA00F1B448 /* IrisLabs4.app */,
+				B19D6C11254A20BD00F1B448 /* IrisLabs4Tests.xctest */,
+				B19D6C1C254A20BD00F1B448 /* IrisLabs4UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B19D6BFD254A20BA00F1B448 /* IrisLabs4 */ = {
+			isa = PBXGroup;
+			children = (
+				B19D6C36254A222000F1B448 /* IrisLabs4.entitlements */,
+				B19D6BFE254A20BA00F1B448 /* AppDelegate.swift */,
+				B19D6C02254A20BA00F1B448 /* FeedViewController.swift */,
+				B1506034254A893000A72079 /* FeedTableViewCell.swift */,
+				B150602C254A85E300A72079 /* PostViewController.swift */,
+				B1506042254ADA1700A72079 /* PostClassesCollectionViewCell.swift */,
+				B1505FEB254A733E00A72079 /* Error States */,
+				B19D6CF4254A5BC100F1B448 /* Animation */,
+				B19D6CD9254A5A5300F1B448 /* Extensions */,
+				B19D6CE6254A5B8200F1B448 /* Privacy & TOS */,
+				B19D6C8E254A2ACC00F1B448 /* Onboarding */,
+				B19D6C04254A20BA00F1B448 /* Main.storyboard */,
+				B1BA52F6254CE320007C9F9D /* MainXS.storyboard */,
+				B1BA5303254FDE13007C9F9D /* MainPlus.storyboard */,
+				B1BA52F4254CE320007C9F9D /* Main8.storyboard */,
+				B19D6C07254A20BD00F1B448 /* Assets.xcassets */,
+				B19D6C09254A20BD00F1B448 /* LaunchScreen.storyboard */,
+				B19D6C0C254A20BD00F1B448 /* Info.plist */,
+				B1505FF5254A790800A72079 /* GoogleService-Info.plist */,
+			);
+			path = IrisLabs4;
+			sourceTree = "<group>";
+		};
+		B19D6C14254A20BD00F1B448 /* IrisLabs4Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B19D6C15254A20BD00F1B448 /* IrisLabs4Tests.swift */,
+				B19D6C17254A20BD00F1B448 /* Info.plist */,
+			);
+			path = IrisLabs4Tests;
+			sourceTree = "<group>";
+		};
+		B19D6C1F254A20BD00F1B448 /* IrisLabs4UITests */ = {
+			isa = PBXGroup;
+			children = (
+				B19D6C20254A20BD00F1B448 /* IrisLabs4UITests.swift */,
+				B19D6C22254A20BD00F1B448 /* Info.plist */,
+			);
+			path = IrisLabs4UITests;
+			sourceTree = "<group>";
+		};
+		B19D6C8E254A2ACC00F1B448 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				B19D6C85254A2AC700F1B448 /* FirstScreenViewController.swift */,
+				B19D6C87254A2AC700F1B448 /* EnterNumberViewController.swift */,
+				B19D6C86254A2AC700F1B448 /* ConfirmNumberViewController.swift */,
+				B19D6C8F254A2B7400F1B448 /* ClassesMultiSelectViewController.swift */,
+				B19D6C90254A2B7500F1B448 /* ClassesMultiSelectTableViewCell.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		B19D6CD9254A5A5300F1B448 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B19D6CEC254A5BB400F1B448 /* Extensions_Animations.swift */,
+				B19D6CC6254A5A5000F1B448 /* Extensions_DeviceInfo.swift */,
+				B19D6CCB254A5A5100F1B448 /* Extensions_Firebase.swift */,
+				B19D6CC8254A5A5100F1B448 /* Extensions_Segue.swift */,
+				B19D6CC7254A5A5000F1B448 /* Extensions_System.swift */,
+				B19D6CCD254A5A5100F1B448 /* Extensions_Theme.swift */,
+				B19D6CCA254A5A5100F1B448 /* Extensions_UI.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B19D6CE6254A5B8200F1B448 /* Privacy & TOS */ = {
+			isa = PBXGroup;
+			children = (
+				B19D6CE7254A5B8200F1B448 /* ServiceViewController.swift */,
+			);
+			path = "Privacy & TOS";
+			sourceTree = "<group>";
+		};
+		B19D6CF4254A5BC100F1B448 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				B19D6CF5254A5BC100F1B448 /* TableLoadingHUD.swift */,
+				B19D6CF6254A5BC100F1B448 /* SentenceLoadingHUD.swift */,
+				B19D6CF7254A5BC100F1B448 /* loading_animation.json */,
+				B19D6CF8254A5BC100F1B448 /* LoadingHUD.swift */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B19D6BFA254A20BA00F1B448 /* IrisLabs4 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B19D6C25254A20BD00F1B448 /* Build configuration list for PBXNativeTarget "IrisLabs4" */;
+			buildPhases = (
+				1AA841C3A2E065B6C8365C48 /* [CP] Check Pods Manifest.lock */,
+				B19D6BF7254A20BA00F1B448 /* Sources */,
+				B19D6BF8254A20BA00F1B448 /* Frameworks */,
+				B19D6BF9254A20BA00F1B448 /* Resources */,
+				FFB040A9C1D4859A312FE4CA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IrisLabs4;
+			productName = IrisLabs4;
+			productReference = B19D6BFB254A20BA00F1B448 /* IrisLabs4.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B19D6C10254A20BD00F1B448 /* IrisLabs4Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B19D6C28254A20BD00F1B448 /* Build configuration list for PBXNativeTarget "IrisLabs4Tests" */;
+			buildPhases = (
+				6122D0EE3EC80624A0C8AA7C /* [CP] Check Pods Manifest.lock */,
+				B19D6C0D254A20BD00F1B448 /* Sources */,
+				B19D6C0E254A20BD00F1B448 /* Frameworks */,
+				B19D6C0F254A20BD00F1B448 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B19D6C13254A20BD00F1B448 /* PBXTargetDependency */,
+			);
+			name = IrisLabs4Tests;
+			productName = IrisLabs4Tests;
+			productReference = B19D6C11254A20BD00F1B448 /* IrisLabs4Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B19D6C1B254A20BD00F1B448 /* IrisLabs4UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B19D6C2B254A20BD00F1B448 /* Build configuration list for PBXNativeTarget "IrisLabs4UITests" */;
+			buildPhases = (
+				1F41DDD851FADF2D42E1E26C /* [CP] Check Pods Manifest.lock */,
+				B19D6C18254A20BD00F1B448 /* Sources */,
+				B19D6C19254A20BD00F1B448 /* Frameworks */,
+				B19D6C1A254A20BD00F1B448 /* Resources */,
+				BCF749FC7C19464401D71883 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B19D6C1E254A20BD00F1B448 /* PBXTargetDependency */,
+			);
+			name = IrisLabs4UITests;
+			productName = IrisLabs4UITests;
+			productReference = B19D6C1C254A20BD00F1B448 /* IrisLabs4UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B19D6BF3254A20BA00F1B448 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					B19D6BFA254A20BA00F1B448 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					B19D6C10254A20BD00F1B448 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = B19D6BFA254A20BA00F1B448;
+					};
+					B19D6C1B254A20BD00F1B448 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = B19D6BFA254A20BA00F1B448;
+					};
+				};
+			};
+			buildConfigurationList = B19D6BF6254A20BA00F1B448 /* Build configuration list for PBXProject "IrisLabs4" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B19D6BF2254A20BA00F1B448;
+			productRefGroup = B19D6BFC254A20BA00F1B448 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B19D6BFA254A20BA00F1B448 /* IrisLabs4 */,
+				B19D6C10254A20BD00F1B448 /* IrisLabs4Tests */,
+				B19D6C1B254A20BD00F1B448 /* IrisLabs4UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B19D6BF9254A20BA00F1B448 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B19D6C0B254A20BD00F1B448 /* LaunchScreen.storyboard in Resources */,
+				B19D6C08254A20BD00F1B448 /* Assets.xcassets in Resources */,
+				B1BA52FA254CE320007C9F9D /* Main8.storyboard in Resources */,
+				B1BA5305254FDE13007C9F9D /* MainPlus.storyboard in Resources */,
+				B19D6CFB254A5BC200F1B448 /* loading_animation.json in Resources */,
+				B1BA52FB254CE320007C9F9D /* MainXS.storyboard in Resources */,
+				B19D6C06254A20BA00F1B448 /* Main.storyboard in Resources */,
+				B1505FF6254A790800A72079 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B19D6C0F254A20BD00F1B448 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B19D6C1A254A20BD00F1B448 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1AA841C3A2E065B6C8365C48 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IrisLabs4-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1F41DDD851FADF2D42E1E26C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IrisLabs4-IrisLabs4UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6122D0EE3EC80624A0C8AA7C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IrisLabs4Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCF749FC7C19464401D71883 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IrisLabs4-IrisLabs4UITests/Pods-IrisLabs4-IrisLabs4UITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IrisLabs4-IrisLabs4UITests/Pods-IrisLabs4-IrisLabs4UITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IrisLabs4-IrisLabs4UITests/Pods-IrisLabs4-IrisLabs4UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFB040A9C1D4859A312FE4CA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IrisLabs4/Pods-IrisLabs4-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IrisLabs4/Pods-IrisLabs4-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IrisLabs4/Pods-IrisLabs4-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B19D6BF7254A20BA00F1B448 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B19D6CD3254A5A5100F1B448 /* Extensions_Firebase.swift in Sources */,
+				B1506035254A893000A72079 /* FeedTableViewCell.swift in Sources */,
+				B1505FEF254A733E00A72079 /* NetworkSession.swift in Sources */,
+				B19D6CFC254A5BC200F1B448 /* LoadingHUD.swift in Sources */,
+				B19D6C92254A2B7500F1B448 /* ClassesMultiSelectTableViewCell.swift in Sources */,
+				B19D6CD5254A5A5100F1B448 /* Extensions_Theme.swift in Sources */,
+				B19D6C03254A20BA00F1B448 /* FeedViewController.swift in Sources */,
+				B19D6CCF254A5A5100F1B448 /* Extensions_System.swift in Sources */,
+				B19D6C89254A2AC800F1B448 /* ConfirmNumberViewController.swift in Sources */,
+				B1506043254ADA1700A72079 /* PostClassesCollectionViewCell.swift in Sources */,
+				B150602D254A85E300A72079 /* PostViewController.swift in Sources */,
+				B19D6C8A254A2AC800F1B448 /* EnterNumberViewController.swift in Sources */,
+				B19D6CD2254A5A5100F1B448 /* Extensions_UI.swift in Sources */,
+				B19D6CED254A5BB400F1B448 /* Extensions_Animations.swift in Sources */,
+				B19D6CFA254A5BC200F1B448 /* SentenceLoadingHUD.swift in Sources */,
+				B19D6CE8254A5B8200F1B448 /* ServiceViewController.swift in Sources */,
+				B19D6C88254A2AC800F1B448 /* FirstScreenViewController.swift in Sources */,
+				B1505FF0254A733E00A72079 /* Reachability.swift in Sources */,
+				B19D6CF9254A5BC200F1B448 /* TableLoadingHUD.swift in Sources */,
+				B19D6BFF254A20BA00F1B448 /* AppDelegate.swift in Sources */,
+				B19D6C91254A2B7500F1B448 /* ClassesMultiSelectViewController.swift in Sources */,
+				B19D6CD0254A5A5100F1B448 /* Extensions_Segue.swift in Sources */,
+				B19D6CCE254A5A5100F1B448 /* Extensions_DeviceInfo.swift in Sources */,
+				B1505FF1254A733E00A72079 /* ErrorView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B19D6C0D254A20BD00F1B448 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B19D6C16254A20BD00F1B448 /* IrisLabs4Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B19D6C18254A20BD00F1B448 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B19D6C21254A20BD00F1B448 /* IrisLabs4UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B19D6C13254A20BD00F1B448 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B19D6BFA254A20BA00F1B448 /* IrisLabs4 */;
+			targetProxy = B19D6C12254A20BD00F1B448 /* PBXContainerItemProxy */;
+		};
+		B19D6C1E254A20BD00F1B448 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B19D6BFA254A20BA00F1B448 /* IrisLabs4 */;
+			targetProxy = B19D6C1D254A20BD00F1B448 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B19D6C04254A20BA00F1B448 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B19D6C05254A20BA00F1B448 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B19D6C09254A20BD00F1B448 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B19D6C0A254A20BD00F1B448 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B1BA52F4254CE320007C9F9D /* Main8.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1BA52F5254CE320007C9F9D /* Base */,
+			);
+			name = Main8.storyboard;
+			sourceTree = "<group>";
+		};
+		B1BA52F6254CE320007C9F9D /* MainXS.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1BA52F7254CE320007C9F9D /* Base */,
+			);
+			name = MainXS.storyboard;
+			sourceTree = "<group>";
+		};
+		B1BA5303254FDE13007C9F9D /* MainPlus.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1BA5304254FDE13007C9F9D /* Base */,
+			);
+			name = MainPlus.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B19D6C23254A20BD00F1B448 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B19D6C24254A20BD00F1B448 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B19D6C26254A20BD00F1B448 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1A7CF82B0D8520C3C65BA12 /* Pods-IrisLabs4.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = IrisLabs4/IrisLabs4.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_TEAM = GQ254GL522;
+				INFOPLIST_FILE = IrisLabs4/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shalinshah.iris.IrisLabs4;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B19D6C27254A20BD00F1B448 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CD8A05ED82D1EBFD4D31521 /* Pods-IrisLabs4.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = IrisLabs4/IrisLabs4.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_TEAM = GQ254GL522;
+				INFOPLIST_FILE = IrisLabs4/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shalinshah.iris.IrisLabs4;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		B19D6C29254A20BD00F1B448 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 804D7ACCD75191B7DA593608 /* Pods-IrisLabs4Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GQ254GL522;
+				INFOPLIST_FILE = IrisLabs4Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shalinshah.iris.IrisLabs4Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IrisLabs4.app/IrisLabs4";
+			};
+			name = Debug;
+		};
+		B19D6C2A254A20BD00F1B448 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB7081C338050455BBA461A2 /* Pods-IrisLabs4Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GQ254GL522;
+				INFOPLIST_FILE = IrisLabs4Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shalinshah.iris.IrisLabs4Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IrisLabs4.app/IrisLabs4";
+			};
+			name = Release;
+		};
+		B19D6C2C254A20BD00F1B448 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07E03B5F40167EFF1D1BD4DE /* Pods-IrisLabs4-IrisLabs4UITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GQ254GL522;
+				INFOPLIST_FILE = IrisLabs4UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shalinshah.iris.IrisLabs4UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IrisLabs4;
+			};
+			name = Debug;
+		};
+		B19D6C2D254A20BD00F1B448 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0167C57C427B5DDECC5B6458 /* Pods-IrisLabs4-IrisLabs4UITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GQ254GL522;
+				INFOPLIST_FILE = IrisLabs4UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shalinshah.iris.IrisLabs4UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IrisLabs4;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B19D6BF6254A20BA00F1B448 /* Build configuration list for PBXProject "IrisLabs4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B19D6C23254A20BD00F1B448 /* Debug */,
+				B19D6C24254A20BD00F1B448 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B19D6C25254A20BD00F1B448 /* Build configuration list for PBXNativeTarget "IrisLabs4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B19D6C26254A20BD00F1B448 /* Debug */,
+				B19D6C27254A20BD00F1B448 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B19D6C28254A20BD00F1B448 /* Build configuration list for PBXNativeTarget "IrisLabs4Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B19D6C29254A20BD00F1B448 /* Debug */,
+				B19D6C2A254A20BD00F1B448 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B19D6C2B254A20BD00F1B448 /* Build configuration list for PBXNativeTarget "IrisLabs4UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B19D6C2C254A20BD00F1B448 /* Debug */,
+				B19D6C2D254A20BD00F1B448 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B19D6BF3254A20BA00F1B448 /* Project object */;
+}

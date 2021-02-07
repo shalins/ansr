@@ -1,0 +1,6 @@
+framework module Pods_IrisLabs4_IrisLabs4UITests {
+  umbrella header "Pods-IrisLabs4-IrisLabs4UITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
